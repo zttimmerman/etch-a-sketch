@@ -1,0 +1,45 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+:root {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 17px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    border: 1px solid black;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#reset, #change-size, #rainbow {
+    display: block;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.2rem;
+    border: solid 0.1rem;
+    border-radius: 0.5rem;
+    transition-duration: 0.2s;
+}
+
+#reset:hover, #change-size:hover, #rainbow:hover {
+    background-color: black;
+    color: white;
+}
